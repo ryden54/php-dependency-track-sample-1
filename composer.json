@@ -1,0 +1,11 @@
+{
+    "name": "clabbe/php-dependency-track-sample-1",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Test user",
+            "email": "test.user@domain.com"
+        }
+    ],
+    "require": {}
+}
