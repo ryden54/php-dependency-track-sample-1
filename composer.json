@@ -9,5 +9,13 @@
     ],
     "require": {
         "phpmailer/phpmailer": "5.2.28"
+    },
+    "require-dev": {
+        "cyclonedx/cyclonedx-php-composer": "^3.10"
+    },
+    "config": {
+        "allow-plugins": {
+            "cyclonedx/cyclonedx-php-composer": true
+        }
     }
 }

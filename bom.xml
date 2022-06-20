@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.3" version="1">
+  <metadata>
+    <tools>
+      <tool>
+        <vendor><![CDATA[cyclonedx]]></vendor>
+        <name><![CDATA[cyclonedx-php-composer]]></name>
+        <version><![CDATA[3.10.0]]></version>
+      </tool>
+    </tools>
+    <component type="application" bom-ref="pkg:composer/clabbe/php-dependency-track-sample-1@dev-master">
+      <group><![CDATA[clabbe]]></group>
+      <name><![CDATA[php-dependency-track-sample-1]]></name>
+      <version><![CDATA[dev-master]]></version>
+      <purl><![CDATA[pkg:composer/clabbe/php-dependency-track-sample-1@dev-master]]></purl>
+    </component>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:composer/phpmailer/phpmailer@5.2.28">
+      <group><![CDATA[phpmailer]]></group>
+      <name><![CDATA[phpmailer]]></name>
+      <version><![CDATA[5.2.28]]></version>
+      <description><![CDATA[PHPMailer is a full-featured email creation and transfer class for PHP]]></description>
+      <licenses>
+        <license>
+          <id><![CDATA[LGPL-2.1]]></id>
+        </license>
+      </licenses>
+      <purl><![CDATA[pkg:composer/phpmailer/phpmailer@5.2.28]]></purl>
+      <externalReferences>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/PHPMailer/PHPMailer.git]]></url>
+          <comment><![CDATA[As detected by composer's `getSourceUrls()` (type=git & reference=acba50393dd03da69a50226c139722af8b153b11)]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://api.github.com/repos/PHPMailer/PHPMailer/zipball/acba50393dd03da69a50226c139722af8b153b11]]></url>
+          <comment><![CDATA[As detected by composer's `getDistUrls()` (type=zip & reference=acba50393dd03da69a50226c139722af8b153b11 & sha1=UNDEFINED)]]></comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url><![CDATA[https://github.com/PHPMailer/PHPMailer/issues]]></url>
+          <comment><![CDATA[As set via `support.issues` in composer package definition.]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/PHPMailer/PHPMailer/tree/v5.2.28]]></url>
+          <comment><![CDATA[As set via `support.source` in composer package definition.]]></comment>
+        </reference>
+        <reference type="other">
+          <url><![CDATA[https://marcus.bointon.com/donations/]]></url>
+          <comment><![CDATA[As set via `funding` in composer package definition. (type=custom)]]></comment>
+        </reference>
+        <reference type="other">
+          <url><![CDATA[https://github.com/Synchro]]></url>
+          <comment><![CDATA[As set via `funding` in composer package definition. (type=github)]]></comment>
+        </reference>
+        <reference type="other">
+          <url><![CDATA[https://www.patreon.com/marcusbointon]]></url>
+          <comment><![CDATA[As set via `funding` in composer package definition. (type=patreon)]]></comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/cyclonedx/cyclonedx-library@1.5.0">
+      <group><![CDATA[cyclonedx]]></group>
+      <name><![CDATA[cyclonedx-library]]></name>
+      <version><![CDATA[1.5.0]]></version>
+      <description><![CDATA[Work with CycloneDX Software Bill-of-Materials (SBOM)]]></description>
+      <licenses>
+        <license>
+          <id><![CDATA[Apache-2.0]]></id>
+        </license>
+      </licenses>
+      <purl><![CDATA[pkg:composer/cyclonedx/cyclonedx-library@1.5.0]]></purl>
+      <externalReferences>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/CycloneDX/cyclonedx-php-library.git]]></url>
+          <comment><![CDATA[As detected by composer's `getSourceUrls()` (type=git & reference=f41632e1d47001700ef93fa899e6dc49779aa784)]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://api.github.com/repos/CycloneDX/cyclonedx-php-library/zipball/f41632e1d47001700ef93fa899e6dc49779aa784]]></url>
+          <comment><![CDATA[As detected by composer's `getDistUrls()` (type=zip & reference=f41632e1d47001700ef93fa899e6dc49779aa784 & sha1=UNDEFINED)]]></comment>
+        </reference>
+        <reference type="website">
+          <url><![CDATA[https://github.com/CycloneDX/cyclonedx-php-library/]]></url>
+          <comment><![CDATA[As set via `homepage` in composer package definition.]]></comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url><![CDATA[https://github.com/CycloneDX/cyclonedx-php-library/issues]]></url>
+          <comment><![CDATA[As set via `support.issues` in composer package definition.]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/CycloneDX/cyclonedx-php-library/tree/v1.5.0]]></url>
+          <comment><![CDATA[As set via `support.source` in composer package definition.]]></comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="application" bom-ref="pkg:composer/cyclonedx/cyclonedx-php-composer@3.10.0">
+      <group><![CDATA[cyclonedx]]></group>
+      <name><![CDATA[cyclonedx-php-composer]]></name>
+      <version><![CDATA[3.10.0]]></version>
+      <description><![CDATA[Creates CycloneDX Software Bill-of-Materials (SBOM) from PHP Composer projects]]></description>
+      <licenses>
+        <license>
+          <id><![CDATA[Apache-2.0]]></id>
+        </license>
+      </licenses>
+      <purl><![CDATA[pkg:composer/cyclonedx/cyclonedx-php-composer@3.10.0]]></purl>
+      <externalReferences>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/CycloneDX/cyclonedx-php-composer.git]]></url>
+          <comment><![CDATA[As detected by composer's `getSourceUrls()` (type=git & reference=341792df609deab6131ffa65f2f3b273f2e6128a)]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://api.github.com/repos/CycloneDX/cyclonedx-php-composer/zipball/341792df609deab6131ffa65f2f3b273f2e6128a]]></url>
+          <comment><![CDATA[As detected by composer's `getDistUrls()` (type=zip & reference=341792df609deab6131ffa65f2f3b273f2e6128a & sha1=UNDEFINED)]]></comment>
+        </reference>
+        <reference type="website">
+          <url><![CDATA[https://github.com/CycloneDX/cyclonedx-php-composer/]]></url>
+          <comment><![CDATA[As set via `homepage` in composer package definition.]]></comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url><![CDATA[https://github.com/CycloneDX/cyclonedx-php-composer/issues]]></url>
+          <comment><![CDATA[As set via `support.issues` in composer package definition.]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/CycloneDX/cyclonedx-php-composer/tree/v3.10.0]]></url>
+          <comment><![CDATA[As set via `support.source` in composer package definition.]]></comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/package-url/packageurl-php@1.0.4">
+      <group><![CDATA[package-url]]></group>
+      <name><![CDATA[packageurl-php]]></name>
+      <version><![CDATA[1.0.4]]></version>
+      <description><![CDATA[A parser and builder based on the package url spec.]]></description>
+      <licenses>
+        <license>
+          <id><![CDATA[MIT]]></id>
+        </license>
+      </licenses>
+      <purl><![CDATA[pkg:composer/package-url/packageurl-php@1.0.4]]></purl>
+      <externalReferences>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/package-url/packageurl-php.git]]></url>
+          <comment><![CDATA[As detected by composer's `getSourceUrls()` (type=git & reference=c45953babed516d27a0cf6c1a2d9f7e883ce214f)]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://api.github.com/repos/package-url/packageurl-php/zipball/c45953babed516d27a0cf6c1a2d9f7e883ce214f]]></url>
+          <comment><![CDATA[As detected by composer's `getDistUrls()` (type=zip & reference=c45953babed516d27a0cf6c1a2d9f7e883ce214f & sha1=UNDEFINED)]]></comment>
+        </reference>
+        <reference type="website">
+          <url><![CDATA[https://github.com/package-url/packageurl-php]]></url>
+          <comment><![CDATA[As set via `homepage` in composer package definition.]]></comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url><![CDATA[https://github.com/package-url/packageurl-php/issues]]></url>
+          <comment><![CDATA[As set via `support.issues` in composer package definition.]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/package-url/packageurl-php/tree/1.0.4]]></url>
+          <comment><![CDATA[As set via `support.source` in composer package definition.]]></comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/phplang/scope-exit@1.0.0">
+      <group><![CDATA[phplang]]></group>
+      <name><![CDATA[scope-exit]]></name>
+      <version><![CDATA[1.0.0]]></version>
+      <description><![CDATA[Emulation of SCOPE_EXIT construct from C++]]></description>
+      <licenses>
+        <license>
+          <name><![CDATA[BSD]]></name>
+        </license>
+      </licenses>
+      <purl><![CDATA[pkg:composer/phplang/scope-exit@1.0.0]]></purl>
+      <externalReferences>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/phplang/scope-exit.git]]></url>
+          <comment><![CDATA[As detected by composer's `getSourceUrls()` (type=git & reference=239b73abe89f9414aa85a7ca075ec9445629192b)]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://api.github.com/repos/phplang/scope-exit/zipball/239b73abe89f9414aa85a7ca075ec9445629192b]]></url>
+          <comment><![CDATA[As detected by composer's `getDistUrls()` (type=zip & reference=239b73abe89f9414aa85a7ca075ec9445629192b & sha1=UNDEFINED)]]></comment>
+        </reference>
+        <reference type="website">
+          <url><![CDATA[https://github.com/phplang/scope-exit]]></url>
+          <comment><![CDATA[As set via `homepage` in composer package definition.]]></comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url><![CDATA[https://github.com/phplang/scope-exit/issues]]></url>
+          <comment><![CDATA[As set via `support.issues` in composer package definition.]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/phplang/scope-exit/tree/master]]></url>
+          <comment><![CDATA[As set via `support.source` in composer package definition.]]></comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/swaggest/json-diff@3.8.3">
+      <group><![CDATA[swaggest]]></group>
+      <name><![CDATA[json-diff]]></name>
+      <version><![CDATA[3.8.3]]></version>
+      <description><![CDATA[JSON diff/rearrange/patch/pointer library for PHP]]></description>
+      <licenses>
+        <license>
+          <id><![CDATA[MIT]]></id>
+        </license>
+      </licenses>
+      <purl><![CDATA[pkg:composer/swaggest/json-diff@3.8.3]]></purl>
+      <externalReferences>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/swaggest/json-diff.git]]></url>
+          <comment><![CDATA[As detected by composer's `getSourceUrls()` (type=git & reference=bb3e3b4e9d842bb2e48f31ea568d0459968d1d42)]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://api.github.com/repos/swaggest/json-diff/zipball/bb3e3b4e9d842bb2e48f31ea568d0459968d1d42]]></url>
+          <comment><![CDATA[As detected by composer's `getDistUrls()` (type=zip & reference=bb3e3b4e9d842bb2e48f31ea568d0459968d1d42 & sha1=UNDEFINED)]]></comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url><![CDATA[https://github.com/swaggest/json-diff/issues]]></url>
+          <comment><![CDATA[As set via `support.issues` in composer package definition.]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/swaggest/json-diff/tree/v3.8.3]]></url>
+          <comment><![CDATA[As set via `support.source` in composer package definition.]]></comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/swaggest/json-schema@0.12.39">
+      <group><![CDATA[swaggest]]></group>
+      <name><![CDATA[json-schema]]></name>
+      <version><![CDATA[0.12.39]]></version>
+      <description><![CDATA[High definition PHP structures with JSON-schema based validation]]></description>
+      <licenses>
+        <license>
+          <id><![CDATA[MIT]]></id>
+        </license>
+      </licenses>
+      <purl><![CDATA[pkg:composer/swaggest/json-schema@0.12.39]]></purl>
+      <externalReferences>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/swaggest/php-json-schema.git]]></url>
+          <comment><![CDATA[As detected by composer's `getSourceUrls()` (type=git & reference=193ba39cce1ffa2d55ddd5445315e945a63298a2)]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://api.github.com/repos/swaggest/php-json-schema/zipball/193ba39cce1ffa2d55ddd5445315e945a63298a2]]></url>
+          <comment><![CDATA[As detected by composer's `getDistUrls()` (type=zip & reference=193ba39cce1ffa2d55ddd5445315e945a63298a2 & sha1=UNDEFINED)]]></comment>
+        </reference>
+        <reference type="other">
+          <url><![CDATA[mailto:vearutop@gmail.com]]></url>
+          <comment><![CDATA[As set via `support.email` in composer package definition.]]></comment>
+        </reference>
+        <reference type="issue-tracker">
+          <url><![CDATA[https://github.com/swaggest/php-json-schema/issues]]></url>
+          <comment><![CDATA[As set via `support.issues` in composer package definition.]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/swaggest/php-json-schema/tree/v0.12.39]]></url>
+          <comment><![CDATA[As set via `support.source` in composer package definition.]]></comment>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:composer/symfony/polyfill-mbstring@1.26.0">
+      <group><![CDATA[symfony]]></group>
+      <name><![CDATA[polyfill-mbstring]]></name>
+      <version><![CDATA[1.26.0]]></version>
+      <description><![CDATA[Symfony polyfill for the Mbstring extension]]></description>
+      <licenses>
+        <license>
+          <id><![CDATA[MIT]]></id>
+        </license>
+      </licenses>
+      <purl><![CDATA[pkg:composer/symfony/polyfill-mbstring@1.26.0]]></purl>
+      <externalReferences>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/symfony/polyfill-mbstring.git]]></url>
+          <comment><![CDATA[As detected by composer's `getSourceUrls()` (type=git & reference=9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e)]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e]]></url>
+          <comment><![CDATA[As detected by composer's `getDistUrls()` (type=zip & reference=9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e & sha1=UNDEFINED)]]></comment>
+        </reference>
+        <reference type="website">
+          <url><![CDATA[https://symfony.com]]></url>
+          <comment><![CDATA[As set via `homepage` in composer package definition.]]></comment>
+        </reference>
+        <reference type="distribution">
+          <url><![CDATA[https://github.com/symfony/polyfill-mbstring/tree/v1.26.0]]></url>
+          <comment><![CDATA[As set via `support.source` in composer package definition.]]></comment>
+        </reference>
+        <reference type="other">
+          <url><![CDATA[https://symfony.com/sponsor]]></url>
+          <comment><![CDATA[As set via `funding` in composer package definition. (type=custom)]]></comment>
+        </reference>
+        <reference type="other">
+          <url><![CDATA[https://github.com/fabpot]]></url>
+          <comment><![CDATA[As set via `funding` in composer package definition. (type=github)]]></comment>
+        </reference>
+        <reference type="other">
+          <url><![CDATA[https://tidelift.com/funding/github/packagist/symfony/symfony]]></url>
+          <comment><![CDATA[As set via `funding` in composer package definition. (type=tidelift)]]></comment>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="pkg:composer/phpmailer/phpmailer@5.2.28"/>
+    <dependency ref="pkg:composer/cyclonedx/cyclonedx-library@1.5.0">
+      <dependency ref="pkg:composer/package-url/packageurl-php@1.0.4"/>
+      <dependency ref="pkg:composer/swaggest/json-schema@0.12.39"/>
+    </dependency>
+    <dependency ref="pkg:composer/cyclonedx/cyclonedx-php-composer@3.10.0">
+      <dependency ref="pkg:composer/cyclonedx/cyclonedx-library@1.5.0"/>
+      <dependency ref="pkg:composer/package-url/packageurl-php@1.0.4"/>
+    </dependency>
+    <dependency ref="pkg:composer/package-url/packageurl-php@1.0.4"/>
+    <dependency ref="pkg:composer/phplang/scope-exit@1.0.0"/>
+    <dependency ref="pkg:composer/swaggest/json-diff@3.8.3"/>
+    <dependency ref="pkg:composer/swaggest/json-schema@0.12.39">
+      <dependency ref="pkg:composer/phplang/scope-exit@1.0.0"/>
+      <dependency ref="pkg:composer/swaggest/json-diff@3.8.3"/>
+      <dependency ref="pkg:composer/symfony/polyfill-mbstring@1.26.0"/>
+    </dependency>
+    <dependency ref="pkg:composer/symfony/polyfill-mbstring@1.26.0"/>
+    <dependency ref="pkg:composer/clabbe/php-dependency-track-sample-1@dev-master">
+      <dependency ref="pkg:composer/phpmailer/phpmailer@5.2.28"/>
+      <dependency ref="pkg:composer/cyclonedx/cyclonedx-php-composer@3.10.0"/>
+    </dependency>
+  </dependencies>
+</bom>
