@@ -1,0 +1,274 @@
+{
+  "$schema" : "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "dependency-check",
+        "version" : "7.1.0",
+        "informationUri" : "https://jeremylong.github.io/DependencyCheck/",
+        "rules" : [ {
+          "id" : "CVE-2021-34551",
+          "shortDescription" : {
+            "text" : "High severity - CVE-2021-34551 Unrestricted Upload of File with Dangerous Type vulnerability in pkg:composer/phpmailer/phpmailer@5.2.28"
+          },
+          "fullDescription" : {
+            "text" : "PHPMailer before 6.5.0 on Windows allows remote code execution if lang_path is untrusted data and has a UNC pathname."
+          },
+          "help" : {
+            "text" : "",
+            "markdown" : "For more information see [CVE-2021-34551](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-34551).\n\n\nIf this is a false positive - consider using the HTML report to generate a suppression file. For more information see [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
+          },
+          "properties" : {
+            "cvssv2_score" : 5.1,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "HIGH",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2021-3603",
+          "shortDescription" : {
+            "text" : "High severity - CVE-2021-3603 Inclusion of Functionality from Untrusted Control Sphere vulnerability in pkg:composer/phpmailer/phpmailer@5.2.28"
+          },
+          "fullDescription" : {
+            "text" : "PHPMailer 6.4.1 and earlier contain a vulnerability that can result in untrusted code being called (if such code is injected into the host project's scope by other means). If the $patternselect parameter to validateAddress() is set to 'php' (the default, defined by PHPMailer::$validator), and the global namespace contains a function called php, it will be called in preference to the built-in validator of the same name. Mitigated in PHPMailer 6.5.0 by denying the use of simple strings as validator function names."
+          },
+          "help" : {
+            "text" : "",
+            "markdown" : "For more information see [CVE-2021-3603](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-3603).\n\n\nIf this is a false positive - consider using the HTML report to generate a suppression file. For more information see [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-13625",
+          "shortDescription" : {
+            "text" : "High severity - CVE-2020-13625 Improper Encoding or Escaping of Output vulnerability in pkg:composer/phpmailer/phpmailer@5.2.28"
+          },
+          "fullDescription" : {
+            "text" : "PHPMailer before 6.1.6 contains an output escaping bug when the name of a file attachment contains a double quote character. This can result in the file type being misinterpreted by the receiver or any mail relay processing the message."
+          },
+          "help" : {
+            "text" : "",
+            "markdown" : "For more information see [CVE-2020-13625](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-13625).\n\n\nIf this is a false positive - consider using the HTML report to generate a suppression file. For more information see [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
+          },
+          "properties" : {
+            "cvssv2_score" : 5.0,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "LOW",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "NONE",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 7.5,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "LOW",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "NONE",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "NONE",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "3.9",
+            "cvssv3_impactScore" : "3.6",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        } ],
+        "properties" : {
+          "disclaimer" : "Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user's risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.",
+          "nvd" : "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov",
+          "npm" : "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories",
+          "retirejs" : "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+          "ossindex" : "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org",
+          "NVD CVE Checked" : "2022-06-20T07:06:29",
+          "NVD CVE Modified" : "2022-06-20T05:00:01",
+          "VersionCheckOn" : "2022-06-08T14:07:23"
+        }
+      }
+    },
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "/src/vendor/phpmailer/phpmailer/examples/scripts/XRegExp.js"
+      },
+      "hashes" : {
+        "md5" : "3a32b8f5ef473daf92de4c1c994931e6",
+        "sha1" : "3bb33fa49a1b5ca28b00827ecf61e9cafc30aea9",
+        "sha256" : "235599d4a880b33b5c35911776f94aa2ff06c0011c8e7c78490a5b59171f1a2d"
+      },
+      "properties" : { }
+    }, {
+      "location" : {
+        "uri" : "/src/vendor/swaggest/json-schema/composer.lock:swaggest/json-diff/3.8.3"
+      },
+      "properties" : {
+        "id1" : "pkg:composer/swaggest/json-diff@3.8.3"
+      }
+    }, {
+      "location" : {
+        "uri" : "/src/composer.lock:phpmailer/phpmailer/5.2.28"
+      },
+      "properties" : {
+        "id2" : "pkg:composer/phpmailer/phpmailer@5.2.28",
+        "vid1" : "cpe:2.3:a:phpmailer:phpmailer:5.2.28:*:*:*:*:*:*:*",
+        "vid2" : "cpe:2.3:a:phpmailer_project:phpmailer:5.2.28:*:*:*:*:*:*:*"
+      }
+    }, {
+      "location" : {
+        "uri" : "/src/vendor/swaggest/json-schema/composer.lock:symfony/polyfill-mbstring/1.19.0"
+      },
+      "properties" : {
+        "id3" : "pkg:composer/symfony/polyfill-mbstring@1.19.0"
+      }
+    }, {
+      "location" : {
+        "uri" : "/src/vendor/swaggest/json-schema/composer.lock:phplang/scope-exit/1.0.0"
+      },
+      "properties" : {
+        "id4" : "pkg:composer/phplang/scope-exit@1.0.0"
+      }
+    }, {
+      "location" : {
+        "uri" : "/src/vendor/phpmailer/phpmailer/examples/scripts/shAutoloader.js"
+      },
+      "hashes" : {
+        "md5" : "f78de5021de4a54aece26edd18973f9d",
+        "sha1" : "b90fb89adb3175595ac535ac0e88f60b0198d563",
+        "sha256" : "24c0f92f62b00f6a8a72aeaff24b40d1d89f74adf273e78ca9afca861f778b15"
+      },
+      "properties" : { }
+    }, {
+      "location" : {
+        "uri" : "/src/vendor/phpmailer/phpmailer/examples/scripts/shBrushPhp.js"
+      },
+      "hashes" : {
+        "md5" : "46cfa6ac0882fef215b55d82cd19cee5",
+        "sha1" : "f73beca9012ea93b094c5bdbe7f461e6cbb48da6",
+        "sha256" : "5f26f9f8952ae6542ecb40ee10990b73962c9efae09f266d0a6c9ec869006823"
+      },
+      "properties" : { }
+    }, {
+      "location" : {
+        "uri" : "/src/vendor/phpmailer/phpmailer/examples/scripts/shCore.js"
+      },
+      "hashes" : {
+        "md5" : "10a2b8ed4198a1508d0f5db401b2db71",
+        "sha1" : "c53e30a2dd0d57fa4a2159896ad6b2362a32c9be",
+        "sha256" : "02dac3b85b44a6b4734725275d7c565317375194e7f48a4d47a70253ac435892"
+      },
+      "properties" : { }
+    }, {
+      "location" : {
+        "uri" : "/src/vendor/phpmailer/phpmailer/examples/scripts/shLegacy.js"
+      },
+      "hashes" : {
+        "md5" : "bafcc284323b8ef00ff72ba506347924",
+        "sha1" : "4864342972f4e759f7e9b73d3866ee5dea090b22",
+        "sha256" : "073dc8d7a2db8f5f5a77a3a311ceb04484bf40009c1a2bab121d74c314e56fc1"
+      },
+      "properties" : { }
+    } ],
+    "results" : [ {
+      "ruleId" : "CVE-2021-34551",
+      "level" : "warning",
+      "message" : {
+        "text" : "CVE-2021-34551 - PHPMailer before 6.5.0 on Windows allows remote code execution if lang_path is untrusted data and has a UNC pathname."
+      },
+      "partialFingerprints" : {
+        "vulnerabilityHash" : "16b109da79c1f26173d7a1821a205172"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/src/composer.lock:phpmailer/phpmailer/5.2.28",
+            "index" : 2
+          }
+        },
+        "logicalLocations" : [ {
+          "fullyQualifiedName" : "pkg:composer/phpmailer/phpmailer@5.2.28"
+        } ]
+      } ]
+    }, {
+      "ruleId" : "CVE-2021-3603",
+      "level" : "warning",
+      "message" : {
+        "text" : "CVE-2021-3603 - PHPMailer 6.4.1 and earlier contain a vulnerability that can result in untrusted code being called (if such code is injected into the host project's scope by other means). If the $patternselect parameter to validateAddress() is set to 'php' (the default, defined by PHPMailer::$validator), and the global namespace contains a function called php, it will be called in preference to the built-in validator of the same name. Mitigated in PHPMailer 6.5.0 by denying the use of simple strings as validator function names."
+      },
+      "partialFingerprints" : {
+        "vulnerabilityHash" : "77d319a151a9ce4dc9fff3458da7049a"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/src/composer.lock:phpmailer/phpmailer/5.2.28",
+            "index" : 2
+          }
+        },
+        "logicalLocations" : [ {
+          "fullyQualifiedName" : "pkg:composer/phpmailer/phpmailer@5.2.28"
+        } ]
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-13625",
+      "level" : "warning",
+      "message" : {
+        "text" : "CVE-2020-13625 - PHPMailer before 6.1.6 contains an output escaping bug when the name of a file attachment contains a double quote character. This can result in the file type being misinterpreted by the receiver or any mail relay processing the message."
+      },
+      "partialFingerprints" : {
+        "vulnerabilityHash" : "52d71f9d7b312e1d45c4616a14b92133"
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/src/composer.lock:phpmailer/phpmailer/5.2.28",
+            "index" : 2
+          }
+        },
+        "logicalLocations" : [ {
+          "fullyQualifiedName" : "pkg:composer/phpmailer/phpmailer@5.2.28"
+        } ]
+      } ]
+    } ]
+  } ]
+}

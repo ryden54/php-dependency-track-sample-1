@@ -1,0 +1,424 @@
+{
+  "reportSchema" : "1.1",
+  "scanInfo" : {
+    "engineVersion" : "7.1.0",
+    "dataSource" : [ {
+      "name" : "NVD CVE Checked",
+      "timestamp" : "2022-06-20T07:06:29"
+    }, {
+      "name" : "NVD CVE Modified",
+      "timestamp" : "2022-06-20T05:00:01"
+    }, {
+      "name" : "VersionCheckOn",
+      "timestamp" : "2022-06-08T14:07:23"
+    } ]
+  },
+  "projectInfo" : {
+    "name" : "php-dependency-track-sample-1",
+    "reportDate" : "2022-06-20T07:06:37.451489Z",
+    "credits" : {
+      "NVD" : "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov",
+      "NPM" : "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories",
+      "RETIREJS" : "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+      "OSSINDEX" : "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
+    }
+  },
+  "dependencies" : [ {
+    "isVirtual" : false,
+    "fileName" : "XRegExp.js",
+    "filePath" : "/src/vendor/phpmailer/phpmailer/examples/scripts/XRegExp.js",
+    "md5" : "3a32b8f5ef473daf92de4c1c994931e6",
+    "sha1" : "3bb33fa49a1b5ca28b00827ecf61e9cafc30aea9",
+    "sha256" : "235599d4a880b33b5c35911776f94aa2ff06c0011c8e7c78490a5b59171f1a2d",
+    "evidenceCollected" : {
+      "vendorEvidence" : [ ],
+      "productEvidence" : [ ],
+      "versionEvidence" : [ ]
+    }
+  }, {
+    "isVirtual" : true,
+    "fileName" : "json-diff:3.8.3",
+    "filePath" : "/src/vendor/swaggest/json-schema/composer.lock:swaggest/json-diff/3.8.3",
+    "evidenceCollected" : {
+      "vendorEvidence" : [ {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "vendor",
+        "value" : "swaggest"
+      } ],
+      "productEvidence" : [ {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "product",
+        "value" : "json-diff"
+      } ],
+      "versionEvidence" : [ {
+        "type" : "version",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "version",
+        "value" : "3.8.3"
+      } ]
+    },
+    "packages" : [ {
+      "id" : "pkg:composer/swaggest/json-diff@3.8.3",
+      "confidence" : "HIGHEST",
+      "url" : "https://ossindex.sonatype.org/component/pkg:composer/swaggest/json-diff@3.8.3?utm_source=dependency-check&utm_medium=integration&utm_content=7.1.0"
+    } ]
+  }, {
+    "isVirtual" : true,
+    "fileName" : "phpmailer:5.2.28",
+    "filePath" : "/src/composer.lock:phpmailer/phpmailer/5.2.28",
+    "evidenceCollected" : {
+      "vendorEvidence" : [ {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "vendor",
+        "value" : "phpmailer"
+      } ],
+      "productEvidence" : [ {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "product",
+        "value" : "phpmailer"
+      } ],
+      "versionEvidence" : [ {
+        "type" : "version",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "version",
+        "value" : "5.2.28"
+      } ]
+    },
+    "packages" : [ {
+      "id" : "pkg:composer/phpmailer/phpmailer@5.2.28",
+      "confidence" : "HIGHEST",
+      "url" : "https://ossindex.sonatype.org/component/pkg:composer/phpmailer/phpmailer@5.2.28?utm_source=dependency-check&utm_medium=integration&utm_content=7.1.0"
+    } ],
+    "vulnerabilityIds" : [ {
+      "id" : "cpe:2.3:a:phpmailer:phpmailer:5.2.28:*:*:*:*:*:*:*",
+      "confidence" : "HIGHEST",
+      "url" : "https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aphpmailer&cpe_product=cpe%3A%2F%3Aphpmailer%3Aphpmailer&cpe_version=cpe%3A%2F%3Aphpmailer%3Aphpmailer%3A5.2.28"
+    }, {
+      "id" : "cpe:2.3:a:phpmailer_project:phpmailer:5.2.28:*:*:*:*:*:*:*",
+      "confidence" : "HIGHEST",
+      "url" : "https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aphpmailer_project&cpe_product=cpe%3A%2F%3Aphpmailer_project%3Aphpmailer&cpe_version=cpe%3A%2F%3Aphpmailer_project%3Aphpmailer%3A5.2.28"
+    } ],
+    "vulnerabilities" : [ {
+      "source" : "NVD",
+      "name" : "CVE-2021-34551",
+      "severity" : "HIGH",
+      "cvssv2" : {
+        "score" : 5.1,
+        "accessVector" : "NETWORK",
+        "accessComplexity" : "HIGH",
+        "authenticationr" : "NONE",
+        "confidentialImpact" : "PARTIAL",
+        "integrityImpact" : "PARTIAL",
+        "availabilityImpact" : "PARTIAL",
+        "severity" : "MEDIUM",
+        "version" : "2.0",
+        "exploitabilityScore" : "4.9",
+        "impactScore" : "6.4"
+      },
+      "cvssv3" : {
+        "baseScore" : 8.1,
+        "attackVector" : "NETWORK",
+        "attackComplexity" : "HIGH",
+        "privilegesRequired" : "NONE",
+        "userInteraction" : "NONE",
+        "scope" : "UNCHANGED",
+        "confidentialityImpact" : "HIGH",
+        "integrityImpact" : "HIGH",
+        "availabilityImpact" : "HIGH",
+        "baseSeverity" : "HIGH",
+        "exploitabilityScore" : "2.2",
+        "impactScore" : "5.9",
+        "version" : "3.1"
+      },
+      "cwes" : [ "CWE-434" ],
+      "description" : "PHPMailer before 6.5.0 on Windows allows remote code execution if lang_path is untrusted data and has a UNC pathname.",
+      "notes" : "",
+      "references" : [ {
+        "source" : "FEDORA",
+        "url" : "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3YRMWGA4VTMXFB22KICMB7YMFZNFV3EJ/",
+        "name" : "FEDORA-2021-ef548cb234"
+      }, {
+        "source" : "FEDORA",
+        "url" : "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FJYSOFCUBS67J3TKR74SD3C454N7VTYM/",
+        "name" : "FEDORA-2021-bfc34b3d5c"
+      }, {
+        "source" : "CONFIRM",
+        "url" : "https://github.com/PHPMailer/PHPMailer/blob/master/SECURITY.md",
+        "name" : "https://github.com/PHPMailer/PHPMailer/blob/master/SECURITY.md"
+      } ],
+      "vulnerableSoftware" : [ {
+        "software" : {
+          "id" : "cpe:2.3:a:phpmailer_project:phpmailer:*:*:*:*:*:*:*:*",
+          "vulnerabilityIdMatched" : "true",
+          "versionEndExcluding" : "6.5.0"
+        }
+      } ]
+    }, {
+      "source" : "NVD",
+      "name" : "CVE-2021-3603",
+      "severity" : "HIGH",
+      "cvssv2" : {
+        "score" : 6.8,
+        "accessVector" : "NETWORK",
+        "accessComplexity" : "MEDIUM",
+        "authenticationr" : "NONE",
+        "confidentialImpact" : "PARTIAL",
+        "integrityImpact" : "PARTIAL",
+        "availabilityImpact" : "PARTIAL",
+        "severity" : "MEDIUM",
+        "version" : "2.0",
+        "exploitabilityScore" : "8.6",
+        "impactScore" : "6.4"
+      },
+      "cvssv3" : {
+        "baseScore" : 8.1,
+        "attackVector" : "NETWORK",
+        "attackComplexity" : "HIGH",
+        "privilegesRequired" : "NONE",
+        "userInteraction" : "NONE",
+        "scope" : "UNCHANGED",
+        "confidentialityImpact" : "HIGH",
+        "integrityImpact" : "HIGH",
+        "availabilityImpact" : "HIGH",
+        "baseSeverity" : "HIGH",
+        "exploitabilityScore" : "2.2",
+        "impactScore" : "5.9",
+        "version" : "3.1"
+      },
+      "cwes" : [ "CWE-829" ],
+      "description" : "PHPMailer 6.4.1 and earlier contain a vulnerability that can result in untrusted code being called (if such code is injected into the host project's scope by other means). If the $patternselect parameter to validateAddress() is set to 'php' (the default, defined by PHPMailer::$validator), and the global namespace contains a function called php, it will be called in preference to the built-in validator of the same name. Mitigated in PHPMailer 6.5.0 by denying the use of simple strings as validator function names.",
+      "notes" : "",
+      "references" : [ {
+        "source" : "MISC",
+        "url" : "https://github.com/PHPMailer/PHPMailer/commit/45f3c18dc6a2de1cb1bf49b9b249a9ee36a5f7f3",
+        "name" : "https://github.com/PHPMailer/PHPMailer/commit/45f3c18dc6a2de1cb1bf49b9b249a9ee36a5f7f3"
+      }, {
+        "source" : "FEDORA",
+        "url" : "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3YRMWGA4VTMXFB22KICMB7YMFZNFV3EJ/",
+        "name" : "FEDORA-2021-ef548cb234"
+      }, {
+        "source" : "FEDORA",
+        "url" : "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FJYSOFCUBS67J3TKR74SD3C454N7VTYM/",
+        "name" : "FEDORA-2021-bfc34b3d5c"
+      }, {
+        "source" : "CONFIRM",
+        "url" : "https://www.huntr.dev/bounties/1-PHPMailer/PHPMailer/",
+        "name" : "https://www.huntr.dev/bounties/1-PHPMailer/PHPMailer/"
+      } ],
+      "vulnerableSoftware" : [ {
+        "software" : {
+          "id" : "cpe:2.3:a:phpmailer_project:phpmailer:*:*:*:*:*:*:*:*",
+          "vulnerabilityIdMatched" : "true",
+          "versionEndIncluding" : "6.4.1"
+        }
+      } ]
+    }, {
+      "source" : "NVD",
+      "name" : "CVE-2020-13625",
+      "severity" : "HIGH",
+      "cvssv2" : {
+        "score" : 5.0,
+        "accessVector" : "NETWORK",
+        "accessComplexity" : "LOW",
+        "authenticationr" : "NONE",
+        "confidentialImpact" : "NONE",
+        "integrityImpact" : "PARTIAL",
+        "availabilityImpact" : "NONE",
+        "severity" : "MEDIUM",
+        "version" : "2.0",
+        "exploitabilityScore" : "10.0",
+        "impactScore" : "2.9"
+      },
+      "cvssv3" : {
+        "baseScore" : 7.5,
+        "attackVector" : "NETWORK",
+        "attackComplexity" : "LOW",
+        "privilegesRequired" : "NONE",
+        "userInteraction" : "NONE",
+        "scope" : "UNCHANGED",
+        "confidentialityImpact" : "NONE",
+        "integrityImpact" : "HIGH",
+        "availabilityImpact" : "NONE",
+        "baseSeverity" : "HIGH",
+        "exploitabilityScore" : "3.9",
+        "impactScore" : "3.6",
+        "version" : "3.1"
+      },
+      "cwes" : [ "CWE-116" ],
+      "description" : "PHPMailer before 6.1.6 contains an output escaping bug when the name of a file attachment contains a double quote character. This can result in the file type being misinterpreted by the receiver or any mail relay processing the message.",
+      "notes" : "",
+      "references" : [ {
+        "source" : "CONFIRM",
+        "url" : "https://github.com/PHPMailer/PHPMailer/security/advisories/GHSA-f7hx-fqxw-rvvj",
+        "name" : "https://github.com/PHPMailer/PHPMailer/security/advisories/GHSA-f7hx-fqxw-rvvj"
+      }, {
+        "source" : "SUSE",
+        "url" : "http://lists.opensuse.org/opensuse-security-announce/2020-07/msg00085.html",
+        "name" : "openSUSE-SU-2020:1106"
+      }, {
+        "source" : "SUSE",
+        "url" : "http://lists.opensuse.org/opensuse-security-announce/2020-07/msg00067.html",
+        "name" : "openSUSE-SU-2020:1060"
+      }, {
+        "source" : "FEDORA",
+        "url" : "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SMH4TC5XTS3KZVGMSKEPPBZ2XTZCKKCX/",
+        "name" : "FEDORA-2020-06e87e71fe"
+      }, {
+        "source" : "MLIST",
+        "url" : "https://lists.debian.org/debian-lts-announce/2020/08/msg00004.html",
+        "name" : "[debian-lts-announce] 20200802 [SECURITY] [DLA 2306-1] libphp-phpmailer security update"
+      }, {
+        "source" : "CONFIRM",
+        "url" : "https://github.com/PHPMailer/PHPMailer/releases/tag/v6.1.6",
+        "name" : "https://github.com/PHPMailer/PHPMailer/releases/tag/v6.1.6"
+      }, {
+        "source" : "FEDORA",
+        "url" : "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EFM3BZABL6RUHTVMXSC7OFMP4CKWMRPJ/",
+        "name" : "FEDORA-2020-0bbe6304e3"
+      }, {
+        "source" : "UBUNTU",
+        "url" : "https://usn.ubuntu.com/4505-1/",
+        "name" : "USN-4505-1"
+      }, {
+        "source" : "MLIST",
+        "url" : "https://lists.debian.org/debian-lts-announce/2020/06/msg00014.html",
+        "name" : "[debian-lts-announce] 20200611 [SECURITY] [DLA 2244-1] libphp-phpmailer security update"
+      } ],
+      "vulnerableSoftware" : [ {
+        "software" : {
+          "id" : "cpe:2.3:a:phpmailer_project:phpmailer:*:*:*:*:*:*:*:*",
+          "vulnerabilityIdMatched" : "true",
+          "versionEndExcluding" : "6.1.6"
+        }
+      } ]
+    } ]
+  }, {
+    "isVirtual" : true,
+    "fileName" : "polyfill-mbstring:1.19.0",
+    "filePath" : "/src/vendor/swaggest/json-schema/composer.lock:symfony/polyfill-mbstring/1.19.0",
+    "evidenceCollected" : {
+      "vendorEvidence" : [ {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "vendor",
+        "value" : "symfony"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "hint analyzer",
+        "name" : "vendor",
+        "value" : "sensiolabs"
+      } ],
+      "productEvidence" : [ {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "product",
+        "value" : "polyfill-mbstring"
+      } ],
+      "versionEvidence" : [ {
+        "type" : "version",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "version",
+        "value" : "1.19.0"
+      } ]
+    },
+    "packages" : [ {
+      "id" : "pkg:composer/symfony/polyfill-mbstring@1.19.0",
+      "confidence" : "HIGHEST",
+      "url" : "https://ossindex.sonatype.org/component/pkg:composer/symfony/polyfill-mbstring@1.19.0?utm_source=dependency-check&utm_medium=integration&utm_content=7.1.0"
+    } ]
+  }, {
+    "isVirtual" : true,
+    "fileName" : "scope-exit:1.0.0",
+    "filePath" : "/src/vendor/swaggest/json-schema/composer.lock:phplang/scope-exit/1.0.0",
+    "evidenceCollected" : {
+      "vendorEvidence" : [ {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "vendor",
+        "value" : "phplang"
+      } ],
+      "productEvidence" : [ {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "product",
+        "value" : "scope-exit"
+      } ],
+      "versionEvidence" : [ {
+        "type" : "version",
+        "confidence" : "HIGHEST",
+        "source" : "composer.lock",
+        "name" : "version",
+        "value" : "1.0.0"
+      } ]
+    },
+    "packages" : [ {
+      "id" : "pkg:composer/phplang/scope-exit@1.0.0",
+      "confidence" : "HIGHEST",
+      "url" : "https://ossindex.sonatype.org/component/pkg:composer/phplang/scope-exit@1.0.0?utm_source=dependency-check&utm_medium=integration&utm_content=7.1.0"
+    } ]
+  }, {
+    "isVirtual" : false,
+    "fileName" : "shAutoloader.js",
+    "filePath" : "/src/vendor/phpmailer/phpmailer/examples/scripts/shAutoloader.js",
+    "md5" : "f78de5021de4a54aece26edd18973f9d",
+    "sha1" : "b90fb89adb3175595ac535ac0e88f60b0198d563",
+    "sha256" : "24c0f92f62b00f6a8a72aeaff24b40d1d89f74adf273e78ca9afca861f778b15",
+    "evidenceCollected" : {
+      "vendorEvidence" : [ ],
+      "productEvidence" : [ ],
+      "versionEvidence" : [ ]
+    }
+  }, {
+    "isVirtual" : false,
+    "fileName" : "shBrushPhp.js",
+    "filePath" : "/src/vendor/phpmailer/phpmailer/examples/scripts/shBrushPhp.js",
+    "md5" : "46cfa6ac0882fef215b55d82cd19cee5",
+    "sha1" : "f73beca9012ea93b094c5bdbe7f461e6cbb48da6",
+    "sha256" : "5f26f9f8952ae6542ecb40ee10990b73962c9efae09f266d0a6c9ec869006823",
+    "evidenceCollected" : {
+      "vendorEvidence" : [ ],
+      "productEvidence" : [ ],
+      "versionEvidence" : [ ]
+    }
+  }, {
+    "isVirtual" : false,
+    "fileName" : "shCore.js",
+    "filePath" : "/src/vendor/phpmailer/phpmailer/examples/scripts/shCore.js",
+    "md5" : "10a2b8ed4198a1508d0f5db401b2db71",
+    "sha1" : "c53e30a2dd0d57fa4a2159896ad6b2362a32c9be",
+    "sha256" : "02dac3b85b44a6b4734725275d7c565317375194e7f48a4d47a70253ac435892",
+    "evidenceCollected" : {
+      "vendorEvidence" : [ ],
+      "productEvidence" : [ ],
+      "versionEvidence" : [ ]
+    }
+  }, {
+    "isVirtual" : false,
+    "fileName" : "shLegacy.js",
+    "filePath" : "/src/vendor/phpmailer/phpmailer/examples/scripts/shLegacy.js",
+    "md5" : "bafcc284323b8ef00ff72ba506347924",
+    "sha1" : "4864342972f4e759f7e9b73d3866ee5dea090b22",
+    "sha256" : "073dc8d7a2db8f5f5a77a3a311ceb04484bf40009c1a2bab121d74c314e56fc1",
+    "evidenceCollected" : {
+      "vendorEvidence" : [ ],
+      "productEvidence" : [ ],
+      "versionEvidence" : [ ]
+    }
+  } ]
+}

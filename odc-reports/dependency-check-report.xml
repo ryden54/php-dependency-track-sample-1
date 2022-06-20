@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?><analysis xmlns="https://jeremylong.github.io/DependencyCheck/dependency-check.2.5.xsd">
+  <scanInfo>
+    <engineVersion>7.1.0</engineVersion>
+    <dataSource>
+      <name>NVD CVE Checked</name>
+      <timestamp>2022-06-20T07:06:29</timestamp>
+    </dataSource>
+    <dataSource>
+      <name>NVD CVE Modified</name>
+      <timestamp>2022-06-20T05:00:01</timestamp>
+    </dataSource>
+    <dataSource>
+      <name>VersionCheckOn</name>
+      <timestamp>2022-06-08T14:07:23</timestamp>
+    </dataSource>
+  </scanInfo>
+  <projectInfo>
+    <name>php-dependency-track-sample-1</name>
+    <reportDate>2022-06-20T07:06:37.451489Z</reportDate>
+    <credits>This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov, NPM Public Advisories: https://www.npmjs.com/advisories, and the RetireJS community.</credits>
+  </projectInfo>
+  <dependencies>
+    <dependency isVirtual="false">
+      <fileName>XRegExp.js</fileName>
+      <filePath>/src/vendor/phpmailer/phpmailer/examples/scripts/XRegExp.js</filePath>
+      <md5>3a32b8f5ef473daf92de4c1c994931e6</md5>
+      <sha1>3bb33fa49a1b5ca28b00827ecf61e9cafc30aea9</sha1>
+      <sha256>235599d4a880b33b5c35911776f94aa2ff06c0011c8e7c78490a5b59171f1a2d</sha256>
+      <evidenceCollected/>
+    </dependency>
+    <dependency isVirtual="true">
+      <fileName>json-diff:3.8.3</fileName>
+      <filePath>/src/vendor/swaggest/json-schema/composer.lock:swaggest/json-diff/3.8.3</filePath>
+      <md5/>
+      <sha1/>
+      <sha256/>
+      <evidenceCollected>
+        <evidence type="vendor" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>vendor</name>
+          <value>swaggest</value>
+        </evidence>
+        <evidence type="product" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>product</name>
+          <value>json-diff</value>
+        </evidence>
+        <evidence type="version" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>version</name>
+          <value>3.8.3</value>
+        </evidence>
+      </evidenceCollected>
+      <identifiers>
+        <package confidence="HIGHEST">
+          <id>pkg:composer/swaggest/json-diff@3.8.3</id>
+          <url>https://ossindex.sonatype.org/component/pkg:composer/swaggest/json-diff@3.8.3?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=7.1.0</url>
+        </package>
+      </identifiers>
+    </dependency>
+    <dependency isVirtual="true">
+      <fileName>phpmailer:5.2.28</fileName>
+      <filePath>/src/composer.lock:phpmailer/phpmailer/5.2.28</filePath>
+      <md5/>
+      <sha1/>
+      <sha256/>
+      <evidenceCollected>
+        <evidence type="vendor" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>vendor</name>
+          <value>phpmailer</value>
+        </evidence>
+        <evidence type="product" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>product</name>
+          <value>phpmailer</value>
+        </evidence>
+        <evidence type="version" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>version</name>
+          <value>5.2.28</value>
+        </evidence>
+      </evidenceCollected>
+      <identifiers>
+        <package confidence="HIGHEST">
+          <id>pkg:composer/phpmailer/phpmailer@5.2.28</id>
+          <url>https://ossindex.sonatype.org/component/pkg:composer/phpmailer/phpmailer@5.2.28?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=7.1.0</url>
+        </package>
+        <vulnerabilityIds confidence="HIGHEST">
+          <id>cpe:2.3:a:phpmailer:phpmailer:5.2.28:*:*:*:*:*:*:*</id>
+          <url>https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aphpmailer&amp;cpe_product=cpe%3A%2F%3Aphpmailer%3Aphpmailer&amp;cpe_version=cpe%3A%2F%3Aphpmailer%3Aphpmailer%3A5.2.28</url>
+        </vulnerabilityIds>
+        <vulnerabilityIds confidence="HIGHEST">
+          <id>cpe:2.3:a:phpmailer_project:phpmailer:5.2.28:*:*:*:*:*:*:*</id>
+          <url>https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aphpmailer_project&amp;cpe_product=cpe%3A%2F%3Aphpmailer_project%3Aphpmailer&amp;cpe_version=cpe%3A%2F%3Aphpmailer_project%3Aphpmailer%3A5.2.28</url>
+        </vulnerabilityIds>
+      </identifiers>
+      <vulnerabilities>
+        <vulnerability source="NVD">
+          <name>CVE-2021-34551</name>
+          <severity>HIGH</severity>
+          <cvssV2>
+            <score>5.1</score>
+            <accessVector>NETWORK</accessVector>
+            <accessComplexity>HIGH</accessComplexity>
+            <authenticationr>NONE</authenticationr>
+            <confidentialImpact>PARTIAL</confidentialImpact>
+            <integrityImpact>PARTIAL</integrityImpact>
+            <availabilityImpact>PARTIAL</availabilityImpact>
+            <severity>MEDIUM</severity>
+            <version>2.0</version>
+            <exploitabilityScore>4.9</exploitabilityScore>
+            <impactScore>6.4</impactScore>
+          </cvssV2>
+          <cvssV3>
+            <baseScore>8.1</baseScore>
+            <attackVector>NETWORK</attackVector>
+            <attackComplexity>HIGH</attackComplexity>
+            <privilegesRequired>NONE</privilegesRequired>
+            <userInteraction>NONE</userInteraction>
+            <scope>UNCHANGED</scope>
+            <confidentialityImpact>HIGH</confidentialityImpact>
+            <integrityImpact>HIGH</integrityImpact>
+            <availabilityImpact>HIGH</availabilityImpact>
+            <baseSeverity>HIGH</baseSeverity>
+            <exploitabilityScore>2.2</exploitabilityScore>
+            <impactScore>5.9</impactScore>
+            <version>3.1</version>
+          </cvssV3>
+          <cwes>
+            <cwe>CWE-434</cwe>
+          </cwes>
+          <description>PHPMailer before 6.5.0 on Windows allows remote code execution if lang_path is untrusted data and has a UNC pathname.</description>
+          <references>
+            <reference>
+              <source>FEDORA</source>
+              <url>https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3YRMWGA4VTMXFB22KICMB7YMFZNFV3EJ/</url>
+              <name>FEDORA-2021-ef548cb234</name>
+            </reference>
+            <reference>
+              <source>FEDORA</source>
+              <url>https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FJYSOFCUBS67J3TKR74SD3C454N7VTYM/</url>
+              <name>FEDORA-2021-bfc34b3d5c</name>
+            </reference>
+            <reference>
+              <source>CONFIRM</source>
+              <url>https://github.com/PHPMailer/PHPMailer/blob/master/SECURITY.md</url>
+              <name>https://github.com/PHPMailer/PHPMailer/blob/master/SECURITY.md</name>
+            </reference>
+          </references>
+          <vulnerableSoftware>
+            <software vulnerabilityIdMatched="true" versionEndExcluding="6.5.0">cpe:2.3:a:phpmailer_project:phpmailer:*:*:*:*:*:*:*:*</software>
+          </vulnerableSoftware>
+        </vulnerability>
+        <vulnerability source="NVD">
+          <name>CVE-2021-3603</name>
+          <severity>HIGH</severity>
+          <cvssV2>
+            <score>6.8</score>
+            <accessVector>NETWORK</accessVector>
+            <accessComplexity>MEDIUM</accessComplexity>
+            <authenticationr>NONE</authenticationr>
+            <confidentialImpact>PARTIAL</confidentialImpact>
+            <integrityImpact>PARTIAL</integrityImpact>
+            <availabilityImpact>PARTIAL</availabilityImpact>
+            <severity>MEDIUM</severity>
+            <version>2.0</version>
+            <exploitabilityScore>8.6</exploitabilityScore>
+            <impactScore>6.4</impactScore>
+          </cvssV2>
+          <cvssV3>
+            <baseScore>8.1</baseScore>
+            <attackVector>NETWORK</attackVector>
+            <attackComplexity>HIGH</attackComplexity>
+            <privilegesRequired>NONE</privilegesRequired>
+            <userInteraction>NONE</userInteraction>
+            <scope>UNCHANGED</scope>
+            <confidentialityImpact>HIGH</confidentialityImpact>
+            <integrityImpact>HIGH</integrityImpact>
+            <availabilityImpact>HIGH</availabilityImpact>
+            <baseSeverity>HIGH</baseSeverity>
+            <exploitabilityScore>2.2</exploitabilityScore>
+            <impactScore>5.9</impactScore>
+            <version>3.1</version>
+          </cvssV3>
+          <cwes>
+            <cwe>CWE-829</cwe>
+          </cwes>
+          <description>PHPMailer 6.4.1 and earlier contain a vulnerability that can result in untrusted code being called (if such code is injected into the host project&apos;s scope by other means). If the $patternselect parameter to validateAddress() is set to &apos;php&apos; (the default, defined by PHPMailer::$validator), and the global namespace contains a function called php, it will be called in preference to the built-in validator of the same name. Mitigated in PHPMailer 6.5.0 by denying the use of simple strings as validator function names.</description>
+          <references>
+            <reference>
+              <source>MISC</source>
+              <url>https://github.com/PHPMailer/PHPMailer/commit/45f3c18dc6a2de1cb1bf49b9b249a9ee36a5f7f3</url>
+              <name>https://github.com/PHPMailer/PHPMailer/commit/45f3c18dc6a2de1cb1bf49b9b249a9ee36a5f7f3</name>
+            </reference>
+            <reference>
+              <source>FEDORA</source>
+              <url>https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3YRMWGA4VTMXFB22KICMB7YMFZNFV3EJ/</url>
+              <name>FEDORA-2021-ef548cb234</name>
+            </reference>
+            <reference>
+              <source>FEDORA</source>
+              <url>https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FJYSOFCUBS67J3TKR74SD3C454N7VTYM/</url>
+              <name>FEDORA-2021-bfc34b3d5c</name>
+            </reference>
+            <reference>
+              <source>CONFIRM</source>
+              <url>https://www.huntr.dev/bounties/1-PHPMailer/PHPMailer/</url>
+              <name>https://www.huntr.dev/bounties/1-PHPMailer/PHPMailer/</name>
+            </reference>
+          </references>
+          <vulnerableSoftware>
+            <software vulnerabilityIdMatched="true" versionEndIncluding="6.4.1">cpe:2.3:a:phpmailer_project:phpmailer:*:*:*:*:*:*:*:*</software>
+          </vulnerableSoftware>
+        </vulnerability>
+        <vulnerability source="NVD">
+          <name>CVE-2020-13625</name>
+          <severity>HIGH</severity>
+          <cvssV2>
+            <score>5.0</score>
+            <accessVector>NETWORK</accessVector>
+            <accessComplexity>LOW</accessComplexity>
+            <authenticationr>NONE</authenticationr>
+            <confidentialImpact>NONE</confidentialImpact>
+            <integrityImpact>PARTIAL</integrityImpact>
+            <availabilityImpact>NONE</availabilityImpact>
+            <severity>MEDIUM</severity>
+            <version>2.0</version>
+            <exploitabilityScore>10.0</exploitabilityScore>
+            <impactScore>2.9</impactScore>
+          </cvssV2>
+          <cvssV3>
+            <baseScore>7.5</baseScore>
+            <attackVector>NETWORK</attackVector>
+            <attackComplexity>LOW</attackComplexity>
+            <privilegesRequired>NONE</privilegesRequired>
+            <userInteraction>NONE</userInteraction>
+            <scope>UNCHANGED</scope>
+            <confidentialityImpact>NONE</confidentialityImpact>
+            <integrityImpact>HIGH</integrityImpact>
+            <availabilityImpact>NONE</availabilityImpact>
+            <baseSeverity>HIGH</baseSeverity>
+            <exploitabilityScore>3.9</exploitabilityScore>
+            <impactScore>3.6</impactScore>
+            <version>3.1</version>
+          </cvssV3>
+          <cwes>
+            <cwe>CWE-116</cwe>
+          </cwes>
+          <description>PHPMailer before 6.1.6 contains an output escaping bug when the name of a file attachment contains a double quote character. This can result in the file type being misinterpreted by the receiver or any mail relay processing the message.</description>
+          <references>
+            <reference>
+              <source>CONFIRM</source>
+              <url>https://github.com/PHPMailer/PHPMailer/security/advisories/GHSA-f7hx-fqxw-rvvj</url>
+              <name>https://github.com/PHPMailer/PHPMailer/security/advisories/GHSA-f7hx-fqxw-rvvj</name>
+            </reference>
+            <reference>
+              <source>SUSE</source>
+              <url>http://lists.opensuse.org/opensuse-security-announce/2020-07/msg00085.html</url>
+              <name>openSUSE-SU-2020:1106</name>
+            </reference>
+            <reference>
+              <source>SUSE</source>
+              <url>http://lists.opensuse.org/opensuse-security-announce/2020-07/msg00067.html</url>
+              <name>openSUSE-SU-2020:1060</name>
+            </reference>
+            <reference>
+              <source>FEDORA</source>
+              <url>https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SMH4TC5XTS3KZVGMSKEPPBZ2XTZCKKCX/</url>
+              <name>FEDORA-2020-06e87e71fe</name>
+            </reference>
+            <reference>
+              <source>MLIST</source>
+              <url>https://lists.debian.org/debian-lts-announce/2020/08/msg00004.html</url>
+              <name>[debian-lts-announce] 20200802 [SECURITY] [DLA 2306-1] libphp-phpmailer security update</name>
+            </reference>
+            <reference>
+              <source>CONFIRM</source>
+              <url>https://github.com/PHPMailer/PHPMailer/releases/tag/v6.1.6</url>
+              <name>https://github.com/PHPMailer/PHPMailer/releases/tag/v6.1.6</name>
+            </reference>
+            <reference>
+              <source>FEDORA</source>
+              <url>https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EFM3BZABL6RUHTVMXSC7OFMP4CKWMRPJ/</url>
+              <name>FEDORA-2020-0bbe6304e3</name>
+            </reference>
+            <reference>
+              <source>UBUNTU</source>
+              <url>https://usn.ubuntu.com/4505-1/</url>
+              <name>USN-4505-1</name>
+            </reference>
+            <reference>
+              <source>MLIST</source>
+              <url>https://lists.debian.org/debian-lts-announce/2020/06/msg00014.html</url>
+              <name>[debian-lts-announce] 20200611 [SECURITY] [DLA 2244-1] libphp-phpmailer security update</name>
+            </reference>
+          </references>
+          <vulnerableSoftware>
+            <software vulnerabilityIdMatched="true" versionEndExcluding="6.1.6">cpe:2.3:a:phpmailer_project:phpmailer:*:*:*:*:*:*:*:*</software>
+          </vulnerableSoftware>
+        </vulnerability>
+      </vulnerabilities>
+    </dependency>
+    <dependency isVirtual="true">
+      <fileName>polyfill-mbstring:1.19.0</fileName>
+      <filePath>/src/vendor/swaggest/json-schema/composer.lock:symfony/polyfill-mbstring/1.19.0</filePath>
+      <md5/>
+      <sha1/>
+      <sha256/>
+      <evidenceCollected>
+        <evidence type="vendor" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>vendor</name>
+          <value>symfony</value>
+        </evidence>
+        <evidence type="vendor" confidence="HIGHEST">
+          <source>hint analyzer</source>
+          <name>vendor</name>
+          <value>sensiolabs</value>
+        </evidence>
+        <evidence type="product" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>product</name>
+          <value>polyfill-mbstring</value>
+        </evidence>
+        <evidence type="version" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>version</name>
+          <value>1.19.0</value>
+        </evidence>
+      </evidenceCollected>
+      <identifiers>
+        <package confidence="HIGHEST">
+          <id>pkg:composer/symfony/polyfill-mbstring@1.19.0</id>
+          <url>https://ossindex.sonatype.org/component/pkg:composer/symfony/polyfill-mbstring@1.19.0?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=7.1.0</url>
+        </package>
+      </identifiers>
+    </dependency>
+    <dependency isVirtual="true">
+      <fileName>scope-exit:1.0.0</fileName>
+      <filePath>/src/vendor/swaggest/json-schema/composer.lock:phplang/scope-exit/1.0.0</filePath>
+      <md5/>
+      <sha1/>
+      <sha256/>
+      <evidenceCollected>
+        <evidence type="vendor" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>vendor</name>
+          <value>phplang</value>
+        </evidence>
+        <evidence type="product" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>product</name>
+          <value>scope-exit</value>
+        </evidence>
+        <evidence type="version" confidence="HIGHEST">
+          <source>composer.lock</source>
+          <name>version</name>
+          <value>1.0.0</value>
+        </evidence>
+      </evidenceCollected>
+      <identifiers>
+        <package confidence="HIGHEST">
+          <id>pkg:composer/phplang/scope-exit@1.0.0</id>
+          <url>https://ossindex.sonatype.org/component/pkg:composer/phplang/scope-exit@1.0.0?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=7.1.0</url>
+        </package>
+      </identifiers>
+    </dependency>
+    <dependency isVirtual="false">
+      <fileName>shAutoloader.js</fileName>
+      <filePath>/src/vendor/phpmailer/phpmailer/examples/scripts/shAutoloader.js</filePath>
+      <md5>f78de5021de4a54aece26edd18973f9d</md5>
+      <sha1>b90fb89adb3175595ac535ac0e88f60b0198d563</sha1>
+      <sha256>24c0f92f62b00f6a8a72aeaff24b40d1d89f74adf273e78ca9afca861f778b15</sha256>
+      <evidenceCollected/>
+    </dependency>
+    <dependency isVirtual="false">
+      <fileName>shBrushPhp.js</fileName>
+      <filePath>/src/vendor/phpmailer/phpmailer/examples/scripts/shBrushPhp.js</filePath>
+      <md5>46cfa6ac0882fef215b55d82cd19cee5</md5>
+      <sha1>f73beca9012ea93b094c5bdbe7f461e6cbb48da6</sha1>
+      <sha256>5f26f9f8952ae6542ecb40ee10990b73962c9efae09f266d0a6c9ec869006823</sha256>
+      <evidenceCollected/>
+    </dependency>
+    <dependency isVirtual="false">
+      <fileName>shCore.js</fileName>
+      <filePath>/src/vendor/phpmailer/phpmailer/examples/scripts/shCore.js</filePath>
+      <md5>10a2b8ed4198a1508d0f5db401b2db71</md5>
+      <sha1>c53e30a2dd0d57fa4a2159896ad6b2362a32c9be</sha1>
+      <sha256>02dac3b85b44a6b4734725275d7c565317375194e7f48a4d47a70253ac435892</sha256>
+      <evidenceCollected/>
+    </dependency>
+    <dependency isVirtual="false">
+      <fileName>shLegacy.js</fileName>
+      <filePath>/src/vendor/phpmailer/phpmailer/examples/scripts/shLegacy.js</filePath>
+      <md5>bafcc284323b8ef00ff72ba506347924</md5>
+      <sha1>4864342972f4e759f7e9b73d3866ee5dea090b22</sha1>
+      <sha256>073dc8d7a2db8f5f5a77a3a311ceb04484bf40009c1a2bab121d74c314e56fc1</sha256>
+      <evidenceCollected/>
+    </dependency>
+  </dependencies>
+</analysis>
